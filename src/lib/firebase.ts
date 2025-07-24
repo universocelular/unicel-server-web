@@ -1,16 +1,15 @@
-
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration - Hardcoded to ensure availability in App Hosting
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: "uniceltest-8322e.firebaseapp.com",
-  projectId: "uniceltest-8322e",
-  storageBucket: "uniceltest-8322e.appspot.com",
-  messagingSenderId: "640674384361",
-  appId: "1:640674384361:web:0420e61ffdd9f5f0272378"
+  projectId: "mobileserve-b7xuu",
+  appId: "1:365463007520:web:18341b888adcef6756a745",
+  storageBucket: "mobileserve-b7xuu.firebasestorage.app",
+  apiKey: "AIzaSyDQlLCaUAlp4IG44Ms0Ta-PEeYAlJiF1kc",
+  authDomain: "mobileserve-b7xuu.firebaseapp.com",
+  messagingSenderId: "365463007520"
 };
 
 
