@@ -1,0 +1,13 @@
+
+rules_version = '2';
+
+// Caution: These rules are permissive and are suitable for development environments.
+// For production, you should implement more granular security rules.
+// See https://firebase.google.com/docs/storage/security for more information.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<svg
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="phone-body-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#4b5563" />
+      <stop offset="100%" stopColor="#1f2937" />
+    </linearGradient>
+     <linearGradient id="lock-body-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fde047" />
+      <stop offset="100%" stopColor="#facc15" />
+    </linearGradient>
+  </defs>
+  
+  <g>
+    <rect x="25" y="10" width="50" height="80" rx="8" fill="url(#phone-body-grad)" />
+    <rect x="28" y="15" width="44" height="64" rx="4" fill="#FFFFFF" />
+    <path d="M42 83 h16" stroke="#374151" strokeWidth="2" strokeLinecap="round"/>
+    
+    <g transform="translate(37, 32) scale(1.8)">
+      <rect x="2" y="6" width="12" height="9" rx="2" fill="url(#lock-body-grad)" stroke="#eab308" strokeWidth="0.75" />
+      <path d="M5 6 V 4 a 3 3 0 1 1 6 0 V 6" fill="none" stroke="#6b7280" strokeWidth="1.5" strokeLinecap="round"/>
+    </g>
+  </g>
+</svg>

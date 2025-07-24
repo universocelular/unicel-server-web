@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-body), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240 60% 99%; /* #F8FAFC */
+    --foreground: 222 47% 11%; /* #1E293B */
+
+    --card: 240 100% 100%; /* #FFFFFF */
+    --card-foreground: 222 47% 11%;
+
+    --popover: 240 100% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 240 100% 68%; /* #5E5EFF */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 262 83% 66%; /* #A855F7 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 14% 96%; /* #F1F5F9 */
+    --muted-foreground: 215 28% 45%; /* #64748B */
+
+    --accent: 169 58% 87%;
+    --accent-foreground: 169 50% 30%;
+
+    --destructive: 0 84.2% 60.2%; /* A brighter red */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --input: 214 32% 91%;
+    --ring: 240 100% 68%;
+
+    --radius: 0.75rem;
+  }
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 240 100% 68%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 262 83% 66%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 169 58% 15%;
+    --accent-foreground: 169 58% 90%;
+
+    --destructive: 0 72.2% 50.6%; /* A brighter red for dark mode */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 27%;
+    --input: 217 33% 27%;
+    --ring: 240 100% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Fix for rich text editor content visibility on theme change */
+@layer components {
+    .rich-text-editor-content {
+        color: hsl(var(--foreground));
+    }
+}

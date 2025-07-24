@@ -1,0 +1,19 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 1
+
+# Specifies the nodejs version to use.
+# https://firebase.google.com/docs/app-hosting/manage-deploys#pin-nodejs-version
+pinnedDependencies:
+  nodeVersion: 20
+
+# This setting is used to optimize the build process for Next.js applications.
+# It ensures that only the necessary dependencies are installed, reducing build times.
+# For more information, see the Firebase App Hosting documentation.
+# This should not be changed without understanding the impact on the build process.
+build:
+  - command: 'npm ci'
